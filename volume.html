@@ -7,18 +7,30 @@
     <title>Conversor de Volume</title>
 </head>
 <body>
-    <div>
-        <h2>Conversor de Volume</h2>
+    <div id="converter">
+        <div class="unit">
+            <label for="from-unit">De:</label>
+            <select id="from-unit">
+                <option value="liters">Litros</option>
+                <option value="milliliters">Mililitros</option>
+                <option value="gallons">Galões</option>
+            </select>
+            <input type="number" id="from-value" placeholder="Insira o valor">
+        </div>
+        
+        <div class="unit">
+            <label for="to-unit">Para:</label>
+            <select id="to-unit">
+                <option value="liters">Litros</option>
+                <option value="milliliters">Mililitros</option>
+                <option value="gallons">Galões</option>
+            </select>
+        </div>
+
+        <button id="convert-button">Converter</button>
+        
+        <div id="result">Resultado: <span id="result-value"></span></div>
     </div>
-
-
-
-
-
-
-
-
-
 <script src="./JS/volume.js"></script>
 </body>
 </html>
