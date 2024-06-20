@@ -7,17 +7,30 @@
     <title>Conversor de Pesos</title>
 </head>
 <body>
-    <div>
-        <h2>Conversor de Pesos</h2>
+    <div id="converter">
+        <div class="unit">
+            <label for="from-unit">De:</label>
+            <select id="from-unit">
+                <option value="grams">Gramas</option>
+                <option value="kilograms">Quilogramas</option>
+                <option value="pounds">Libras</option>
+            </select>
+            <input type="number" id="from-value" placeholder="Insira o valor">
+        </div>
+        
+        <div class="unit">
+            <label for="to-unit">Para:</label>
+            <select id="to-unit">
+                <option value="grams">Gramas</option>
+                <option value="kilograms">Quilogramas</option>
+                <option value="pounds">Libras</option>
+            </select>
+        </div>
+
+        <button id="convert-button">Converter</button>
+        
+        <div id="result">Resultado: <span id="result-value"></span></div>
     </div>
-
-
-
-
-
-
-
-
 <script src="./JS/peso.js"></script>    
 </body>
 </html>
