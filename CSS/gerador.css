@@ -1,17 +1,31 @@
-*{
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
-div{
-    align-items: center; 
-}
-
-h2{
+.container{
     text-align: center;
 }
-label{
-    margin-left: 31%;
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#botao{
-   margin-bottom: 0.2em;
+.botao{
+    width: 78%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5x;
+}
+.botao button{
+    margin: 5px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
 }
