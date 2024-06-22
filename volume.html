@@ -7,16 +7,14 @@
     <title>Conversor de Volume</title>
 </head>
 <body>
-    <div>  
-    <h2>Conversor de volume</h2>
+    <h2>Conversor de Volume</h2>
     <div id="converter">
         <div class="unit">
             <label for="from-unit">De:</label>
-            
             <select id="from-unit">
                 <option value="litros">Litros</option>
-                <option value="melele">Mililitros</option>
-                <option value="galao">Galões</option>
+                <option value="mililitros">Mililitros</option>
+                <option value="galoes">Galões</option>
             </select>
             <input type="number" id="from-value" placeholder="Insira o valor">
         </div>
@@ -24,22 +22,20 @@
         <div class="unit">
             <label for="to-unit">Para:</label>
             <select id="to-unit">
-                <option value="liters">Litros</option>
-                <option value="milliliters">Mililitros</option>
-                <option value="gallons">Galões</option>
+                <option value="litros">Litros</option>
+                <option value="mililitros">Mililitros</option>
+                <option value="galoes">Galões</option>
             </select>
         </div>
 
         <button id="convert-button">Converter</button>
         
         <div id="result">Resultado: <span id="result-value"></span></div>
-          <div id="result">
+        <div id="result">
             <label for="result"><strong class="campo"> </strong></label>
-            <textarea rows="6" style="width: 16em" id="result"></textarea>
-            
+            <textarea rows="6" style="width: 16em" id="result-textarea" readonly></textarea>
         </div>
-      
     </div>
-<script src="./JS/volume.js"></script>
+    <script src="./JS/volume.js"></script>
 </body>
 </html>
