@@ -1,37 +1,37 @@
-document.getElementById('convert-button').addEventListener('click', function() {
+document.getElementById('convert-button').addEventListener('click', function(){
     const fromUnit = document.getElementById('from-unit').value;
     const fromValue = parseFloat(document.getElementById('from-value').value);
     const toUnit = document.getElementById('to-unit').value;
 
-    if (isNaN(fromValue)) {
+    if (isNaN(fromValue)){
         alert('Por favor, insira um valor válido.');
         return;
     }
 
     let result;
 
-    if (fromUnit === 'celsius') {
-        if (toUnit === 'fahrenheit') {
+    if (fromUnit === 'celsius'){
+        if (toUnit === 'fahrenheit'){
             result = (fromValue * 9/5) + 32;
-        } else if (toUnit === 'kelvin') {
+        }else if (toUnit === 'kelvin'){
             result = fromValue + 273.15;
-        } else {
+        }else{
             result = fromValue;
         }
-    } else if (fromUnit === 'fahrenheit') {
-        if (toUnit === 'celsius') {
+    }else if (fromUnit === 'fahrenheit'){
+        if (toUnit === 'celsius'){
             result = (fromValue - 32) * 5/9;
-        } else if (toUnit === 'kelvin') {
+        }else if (toUnit === 'kelvin'){
             result = (fromValue - 32) * 5/9 + 273.15;
-        } else {
+        }else{
             result = fromValue;
         }
-    } else if (fromUnit === 'kelvin') {
-        if (toUnit === 'celsius') {
+    }else if (fromUnit === 'kelvin'){
+        if (toUnit === 'celsius'){
             result = fromValue - 273.15;
-        } else if (toUnit === 'fahrenheit') {
+        }else if (toUnit === 'fahrenheit'){
             result = (fromValue - 273.15) * 9/5 + 32;
-        } else {
+        }else{
             result = fromValue;
         }
     }
